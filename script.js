@@ -1,0 +1,25 @@
+const name = document.querySelector("#name");
+const profileImage = document.querySelector("#profile-image");
+
+async function setProfileImage(name) {
+	if (name === "codedamn") {
+		return false;
+	}
+
+	const data = await fetch(`https://api.genderize.io?name=${name}`).then(
+		(response) => response.json()
+	);
+
+	const isMale = data.gender === "male";
+	const profile = `https://api.dicebear.com/5.x/micah/svg?seed=${
+		isMale ? "Felix" : "Aneka"
+	}&backgroundColor=b6e3f4,c0aede,d1d4f9&mouth=laughing,smirk&hair=${
+		isMale ? "fonze" : "full"
+	}`;
+	profileImage.setAttribute("src", profile);
+
+	console.log(profileImage);
+	console.log(profile);
+}
+
+setProfileImage(name.textContent);

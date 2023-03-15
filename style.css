@@ -870,17 +870,17 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 	}
 }
 
-profile > main {
+main {
 	width: 100%;
 	flex-grow: 1;
 }
 
-profile > main > div {
+main > div {
 	--tw-text-opacity: 1;
 	color: rgb(var(--tw-color-gray-900) / var(--tw-text-opacity));
 }
 
-profile > main > div > div.profile__unique1 {
+main > div > div.profile__unique1 {
 	margin: auto;
 	height: 300px;
 	width: 100%;
@@ -890,26 +890,26 @@ profile > main > div > div.profile__unique1 {
 	background-repeat: no-repeat;
 }
 
-profile > main > div > div.profile__unique2 {
+main > div > div.profile__unique2 {
 	position: relative;
 	height: 100%;
 	padding: var(--tw-size-3);
 }
 
 @media (min-width: 640px) {
-	profile > main > div > div.profile__unique2 {
+	main > div > div.profile__unique2 {
 		/* padding: var(--tw-size-0); */
 		padding: 1rem;
 	}
 }
 
-profile > main > div > div > div.profile__unique3 {
+main > div > div > div.profile__unique3 {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: var(--tw-width-3xl);
 }
 
-profile > main > div > div > div > div.profile__unique6 {
+main > div > div > div > div.profile__unique6 {
 	position: absolute;
 	top: calc(var(--tw-size-24) * -1);
 	cursor: pointer;
@@ -921,17 +921,17 @@ profile > main > div > div > div > div.profile__unique6 {
 	background-color: rgb(var(--tw-color-white) / var(--tw-bg-opacity));
 }
 
-profile > main > div > div > div > div > div.profile__unique8 {
+main > div > div > div > div > div.profile__unique8 {
 	position: relative;
 }
 
-profile > main > div > div > div > div > div > img {
+main > div > div > div > div > div > img {
 	border-radius: var(--tw-border-radius-full);
 	-o-object-fit: cover;
 	object-fit: cover;
 }
 
-profile > main > div > div > div > div > div > div {
+main > div > div > div > div > div > div {
 	position: absolute;
 	bottom: var(--tw-size-0);
 	right: var(--tw-size-0);
@@ -946,7 +946,7 @@ profile > main > div > div > div > div > div > div {
 	line-height: var(--tw-line-height-7);
 }
 
-profile > main > div > div > div.profile__unique4 {
+main > div > div > div.profile__unique4 {
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
@@ -957,19 +957,19 @@ profile > main > div > div > div.profile__unique4 {
 	padding-top: var(--tw-size-8);
 }
 
-profile > main > div > div > div > button {
+main > div > div > div > button {
 	margin-left: var(--tw-size-2);
 	display: flex;
 	align-items: center;
 }
 
-profile > main > div > div > div > button > :not([hidden]) ~ :not([hidden]) {
+main > div > div > div > button > :not([hidden]) ~ :not([hidden]) {
 	--tw-space-x-reverse: 0;
 	margin-right: calc(var(--tw-size-4) * var(--tw-space-x-reverse));
 	margin-left: calc(var(--tw-size-4) * calc(1 - var(--tw-space-x-reverse)));
 }
 
-profile > main > div > div > div > button {
+main > div > div > div > button {
 	border-radius: var(--tw-border-radius-lg);
 	padding-left: var(--tw-size-2);
 	padding-right: var(--tw-size-2);
@@ -979,18 +979,18 @@ profile > main > div > div > div > button {
 	color: rgb(var(--tw-color-blue-400) / var(--tw-text-opacity));
 }
 
-profile > main > div > div > div > button:hover {
+main > div > div > div > button:hover {
 	--tw-bg-opacity: 1;
 	background-color: rgb(var(--tw-color-gray-100) / var(--tw-bg-opacity));
 }
 
-profile > main > div > div > div > button > svg {
+main > div > div > div > button > svg {
 	height: var(--tw-size-6);
 	width: var(--tw-size-6);
 	flex-shrink: 0;
 }
 
-profile > main > div > div > div > a {
+main > div > div > div > a {
 	/* border-radius: var(--tw-border-radius-md);
 	border-width: 1px; */
 	--tw-border-opacity: 1;
@@ -1006,44 +1006,37 @@ profile > main > div > div > div > a {
 	color: rgb(var(--tw-color-blue-400) / var(--tw-text-opacity));
 }
 
-profile > main > div > div > div > a:hover {
+main > div > div > div > a:hover {
 	--tw-bg-opacity: 1;
 	background-color: rgb(var(--tw-color-gray-100) / var(--tw-bg-opacity));
 }
 
 @media (min-width: 640px) {
-	profile > main > div > div > div > a {
+	main > div > div > div > a {
 		font-size: var(--tw-font-size-sm);
 		line-height: var(--tw-line-height-5);
 	}
 }
 
-profile > main > div > div > div.profile__unique5 {
+main > div > div > div.profile__unique5 {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: var(--tw-size-5);
 	max-width: var(--tw-width-3xl);
 }
 
-profile
-	> main
-	> div
-	> div
-	> div.profile__unique5
-	> :not([hidden])
-	~ :not([hidden]) {
+main > div > div > div.profile__unique5 > :not([hidden]) ~ :not([hidden]) {
 	--tw-space-y-reverse: 0;
 	margin-top: calc(var(--tw-size-3) * calc(1 - var(--tw-space-y-reverse)));
 	margin-bottom: calc(var(--tw-size-3) * var(--tw-space-y-reverse));
 }
 
-profile > main > div > div > div > div.profile__unique7 {
+main > div > div > div > div.profile__unique7 {
 	display: flex;
 	align-items: center;
 }
 
-profile
-	> main
+main
 	> div
 	> div
 	> div
@@ -1055,19 +1048,19 @@ profile
 	margin-left: calc(var(--tw-size-2) * calc(1 - var(--tw-space-x-reverse)));
 }
 
-profile > main > div > div > div > div > h1 {
+main > div > div > div > div > h1 {
 	font-size: var(--tw-font-size-lg);
 	line-height: var(--tw-line-height-7);
 	font-weight: var(--tw-font-weight-bold);
 }
 
 @media (min-width: 640px) {
-	profile > main > div > div > div > div > h1 {
+	main > div > div > div > div > h1 {
 		font-size: 22px;
 	}
 }
 
-profile > main > div > div > div > div > div.profile__unique9 {
+main > div > div > div > div > div.profile__unique9 {
 	display: inline-flex;
 	align-items: center;
 	border-radius: var(--tw-border-radius-full);
@@ -1084,12 +1077,12 @@ profile > main > div > div > div > div > div.profile__unique9 {
 	color: rgb(var(--tw-color-red-800) / var(--tw-text-opacity));
 }
 
-profile > main > div > div > div > div > div.profile__unique9:hover {
+main > div > div > div > div > div.profile__unique9:hover {
 	--tw-bg-opacity: 1;
 	background-color: rgb(var(--tw-color-red-200) / var(--tw-bg-opacity));
 }
 
-profile > main > div > div > div > div > div > svg.profile__unique12 {
+main > div > div > div > div > div > svg.profile__unique12 {
 	margin-right: var(--tw-size-1_5);
 	height: var(--tw-size-2);
 	width: var(--tw-size-2);
@@ -1097,13 +1090,12 @@ profile > main > div > div > div > div > div > svg.profile__unique12 {
 	color: rgb(var(--tw-color-red-400) / var(--tw-text-opacity));
 }
 
-profile > main > div > div > div > div.profile__unique10 {
+main > div > div > div > div.profile__unique10 {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-profile
-	> main
+main
 	> div
 	> div
 	> div
@@ -1115,7 +1107,7 @@ profile
 	margin-left: calc(var(--tw-size-4) * calc(1 - var(--tw-space-x-reverse)));
 }
 
-profile > main > div > div > div > div.profile__unique10 {
+main > div > div > div > div.profile__unique10 {
 	font-size: var(--tw-font-size-xs);
 	line-height: var(--tw-line-height-4);
 	--tw-text-opacity: 1;
@@ -1123,19 +1115,19 @@ profile > main > div > div > div > div.profile__unique10 {
 }
 
 @media (min-width: 640px) {
-	profile > main > div > div > div > div.profile__unique10 {
+	main > div > div > div > div.profile__unique10 {
 		font-size: var(--tw-font-size-sm);
 		line-height: var(--tw-line-height-5);
 	}
 }
 
-profile > main > div > div > div > div > div.profile__unique11 {
+main > div > div > div > div > div.profile__unique11 {
 	display: flex;
 	align-items: center;
+	margin-left: 1.5rem;
 }
 
-profile
-	> main
+main
 	> div
 	> div
 	> div
@@ -1148,13 +1140,12 @@ profile
 	margin-left: calc(var(--tw-size-2) * calc(1 - var(--tw-space-x-reverse)));
 }
 
-profile > main > div > div > div > div > div.profile__unique14 {
+main > div > div > div > div > div.profile__unique14 {
 	display: flex;
 	align-items: center;
 }
 
-profile
-	> main
+main
 	> div
 	> div
 	> div
@@ -1167,14 +1158,14 @@ profile
 	margin-left: calc(var(--tw-size-2) * calc(1 - var(--tw-space-x-reverse)));
 }
 
-profile > main > div > div > div > p {
+main > div > div > div > p {
 	text-align: justify;
 	font-size: var(--tw-font-size-sm);
 	line-height: var(--tw-line-height-5);
 }
 
 @media (min-width: 640px) {
-	profile > main > div > div > div > p {
+	main > div > div > div > p {
 		font-size: 16px;
 	}
 }
