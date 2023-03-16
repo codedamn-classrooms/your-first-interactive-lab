@@ -4,12 +4,13 @@
 		<title>Your First Interactive Lab</title>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="default.css" />
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<main>
 			<div>
-				<div class="profile__unique1"></div>
+				<div class="profile__unique1" id="cover-image"></div>
 				<div class="profile__unique2">
 					<div class="profile__unique3">
 						<div
@@ -39,16 +40,85 @@
 						</div>
 						<div class="profile__unique10">
 							<!-- Change the username to your favorite username -->
-							<p id="username">@pranav</p>
+							<p id="username">@codedamn</p>
 							<div class="profile__unique11">
 								<!-- Write the first three Letters of the Current Month followed the current year with a space as in the example -->
 								<p id="date">Joined March 2023</p>
 							</div>
 						</div>
-						<p>
-							Making codedamn the best platform to learn
-							programming!
-						</p>
+						<!-- This is the about section, you have to write a sentence about yourself here. You can mention your hobbies, favorites etc.  -->
+						<p id="about">spacex</p>
+						<section id="technology-container">
+							<h3>I'm Interested in</h3>
+							<!-- You have to make the cards container a flex container so that all the cards are aligned properly  -->
+							<div id="technology-cards">
+								<div class="card">
+									<img
+										alt="HTML 5"
+										width="45"
+										height="45"
+										src="https://wsrv.nl/?url=https%3A%2F%2Fcodedamn.com%2Fassets%2Fcolored-tech-icons%2Fhtml-5.svg&amp;w=90&amp;q=70&amp;output=webp"
+										style="color: transparent"
+									/>
+									<div><span>HTML</span></div>
+								</div>
+								<div class="card">
+									<img
+										alt="CSS"
+										loading="lazy"
+										width="45"
+										height="5"
+										src="https://wsrv.nl/?url=https%3A%2F%2Fcodedamn.com%2Fassets%2Fcolored-tech-icons%2Fcss-3.svg&amp;w=50&amp;q=50&amp;output=webp"
+										style="color: transparent"
+									/>
+									<div><span>CSS</span></div>
+								</div>
+								<div class="card">
+									<img
+										alt="JavaScript"
+										loading="lazy"
+										width="45"
+										height="45"
+										src="https://wsrv.nl/?url=https%3A%2F%2Fcodedamn.com%2Fassets%2Fcolored-tech-icons%2Fjavascript.svg&amp;w=90&amp;q=70&amp;output=webp"
+										style="color: transparent"
+									/>
+									<div><span>JavaScript</span></div>
+								</div>
+								<div class="card">
+									<img
+										alt="Git"
+										loading="lazy"
+										width="45"
+										height="45"
+										src="https://wsrv.nl/?url=https%3A%2F%2Fcodedamn.com%2Fassets%2Fcolored-tech-icons%2Fgit.svg&w=90&q=70&output=webp"
+										style="color: transparent"
+									/>
+									<div><span>Git</span></div>
+								</div>
+								<div class="card">
+									<img
+										alt="Node.js"
+										loading="lazy"
+										width="45"
+										height="45"
+										src="https://wsrv.nl/?url=https%3A%2F%2Fcodedamn.com%2Fassets%2Fcolored-tech-icons%2Fnode-js.svg&w=90&q=70&output=webp"
+										style="color: transparent"
+									/>
+									<div><span>Node.js</span></div>
+								</div>
+								<div class="card">
+									<img
+										alt="React"
+										loading="lazy"
+										width="45"
+										height="45"
+										src="https://wsrv.nl/?url=https%3A%2F%2Fcodedamn.com%2Fassets%2Fcolored-tech-icons%2Freact-js.svg&w=90&q=70&output=webp"
+										style="color: transparent"
+									/>
+									<div><span>React</span></div>
+								</div>
+							</div>
+						</section>
 					</div>
 				</div>
 			</div>

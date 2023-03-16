@@ -1,3 +1,2 @@
-tabs: ['index.html', 'script.js', 'style.css']
+tabs: ["index.html", "style.css"]
 terminal-one: static-server -p 1337 --no-cache
-live-reload-browser: true
