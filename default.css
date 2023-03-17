@@ -1226,6 +1226,14 @@ div.card > div > span {
 	}
 }
 
+#name {
+	font-size: 1.75rem;
+}
+
+#date {
+	font-size: 0.8rem;
+}
+
 #technology-container {
 	margin-top: 1.3rem;
 }
