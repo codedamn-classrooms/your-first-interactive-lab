@@ -1,8 +1,9 @@
 const backgroundImage = "https://codedamn.com/assets/cover-image.svg";
-const name = document.querySelector("#name");
+const nameElement = document.querySelector("#name");
 const profileImage = document.querySelector("#profile-image");
 let coverImage = document.querySelector("#cover-image");
 const aboutElement = document.querySelector("#about");
+const dateElement = document.querySelector("#date");
 
 async function setCoverImage(about) {
 	if (about === "Learning to code on codedamn is fun & Interactive") {
@@ -36,5 +37,30 @@ async function setProfileImage(name) {
 	profileImage.setAttribute("src", profile);
 }
 
-setProfileImage(name.textContent);
+function updateDate() {
+	const MONTHS = [
+		"January",
+		"February",
+		"March",
+		"April",
+		"May",
+		"June",
+		"July",
+		"August",
+		"September",
+		"October",
+		"November",
+		"December",
+	];
+
+	const currentDate = new Date();
+	const currentMonth = MONTHS[currentDate.getMonth()];
+	const currentYear = currentDate.getFullYear();
+
+	const dateString = `Joined ${currentMonth} ${currentYear}`;
+	dateElement.textContent = dateString;
+}
+
+setProfileImage(nameElement.textContent);
 setCoverImage(aboutElement.textContent.trim());
+updateDate();
