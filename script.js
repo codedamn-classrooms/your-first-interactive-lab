@@ -10,19 +10,14 @@ async function setCoverImage(about) {
 		return undefined;
 	}
 
-	const response = await fetch(
-		`https://api.unsplash.com/photos/random?query=${about}&orientation=landscape&client_id=VKfNE7ps_SXcHWyvQhL6Ouziatpahe3lMditkleWa8I`
-	).then((response) => response.json());
-	const topics = await fetch(
-		`https://api.unsplash.com/topics?client_id=RDrltY4xtGTzIL9k1AdbuuZjCJl3iqztOIBA9KChtx4`
+	const { imageURL } = await fetch(
+		`https://codedamn-labs.vercel.app/api/getCoverImage?text=${about}`
 	).then((response) => response.json());
 
-	console.log(topics);
-	console.log(coverImage.style.backgroundImage);
-	console.log(response.urls.raw);
-	coverImage.style.backgroundImage = `url("${response.urls.raw}fit=crop&crop=entropy")`;
+	coverImage.style.backgroundImage = `url("${imageURL}?fit=crop&crop=entropy")`;
 	console.log(coverImage.style.backgroundImage);
 }
+
 async function setProfileImage(name) {
 	if (name === "codedamn") {
 		return false;
@@ -39,9 +34,6 @@ async function setProfileImage(name) {
 		isMale ? "fonze" : "full"
 	}`;
 	profileImage.setAttribute("src", profile);
-
-	console.log(profileImage);
-	console.log(profile);
 }
 
 setProfileImage(name.textContent);
